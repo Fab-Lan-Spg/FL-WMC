@@ -1,10 +1,12 @@
-body{
+body {
     background-color: greenyellow;
     box-sizing: border-box global
 }
-h1{
+
+h1 {
     color: grey;
 }
+
 .karte {
     width: 200px;
     padding: 20px;
