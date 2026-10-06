@@ -1,0 +1,12 @@
+body{
+    background-color: greenyellow;
+    box-sizing: border-box global
+}
+h1{
+    color: grey;
+}
+.karte {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #6d28d9;
+}
