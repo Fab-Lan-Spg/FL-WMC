@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="index.html">zurück</a>
+    <br>
+    <br>
+
+    <form action="mailto:mail@mail.com" method="post" enctype="text/plain" class="karte">
+
+        <input type="text" name="gutes" placeholder="sag etwas gutes">
+        <br>
+        <br>
+
+        <input type="radio" name="optionen" value="gut">gut
+        <input type="radio" name="optionen" value="schlecht">schlecht
+        <input type="radio" name="optionen" value="neutral">neutral
+        <br>
+        <br>
+
+        <input type="checkbox" name="check" value="smile">lachen
+        <input type="checkbox" name="check" value="cry">weinen
+        <input type="checkbox" name="check" value="nothing">nichts
+        <br>
+        <br>
+
+        <select name="found">
+            <option value="confused">verwirrt</option>
+            <option value="overwhelmed">überwältigt</option>
+            <option value="whelmed">verzerrt</option>
+        </select>
+        <br>
+        <br>
+
+        <select name="hope" multiple>
+            <option value="hope">hoffnung</option>
+            <option value="responsible">verantwortung</option>
+            <option value="aware">besinnung</option>
+        </select>
+        <br>
+        <br>
+
+        <textarea name="kommentar" placeholder="Bitte um gutes!"></textarea>
+        <br>
+        <br>
+
+        <input name="zeit" type="time" value="12:15">
+        <br>
+        <br>
+        <input type="submit" value="Formular abschicken">
+        <input type="reset" value="Formular zurücksetzen">
+    </form>
+</body>
+
+</html>
