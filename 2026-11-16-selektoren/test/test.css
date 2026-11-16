@@ -1,7 +1,3 @@
-body{
-    margin: 100px;
-}
-
 th{
     padding-bottom: 3em;
 }
@@ -17,3 +13,5 @@ table{
 tr:nth-last-child(1) {
     border-left: 10px cyan solid;
 }
+
+

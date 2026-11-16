@@ -40,14 +40,14 @@ Notiere die drei Selektoren, die du verwendet hast:
 die Position, nicht über eine Klasse.
 
 ```
-2. Schritt: ______________________      vorletzter: ______________________
+2. Schritt: li:nth-child(2)      vorletzter: li:nth-last-child(2)
 ```
 
 **c)** Baue zwei `<div class="kasten">`-Blöcke: einen mit einem Bild darin,
 einen ohne. Formatiere **nur** den Kasten mit Bild über `:has()`. Warum
 funktioniert hier `:has()` und nicht `:is()`?
 
-_________________________________________________
+weil :has() die im div enthaltenen objekte checkt und :is() das objekt selbst. (div hat ein img aber ist kein img)
 
 ---
 

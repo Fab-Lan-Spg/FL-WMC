@@ -474,17 +474,12 @@ button:focus-visible {
 }
 
 /* .kasten — Container für die :has()-Demo */
-.kasten {
+.kasten{
     margin: 0.8rem 0;
     padding: 0.6rem 1rem;
     background: var(--panel);
     border: 1px solid var(--line);
     border-radius: 8px;
-}
-
-/* .kasten:has(img) — Kasten MIT Bild bekommt die Akzentkante */
-.kasten:has(img) {
-    border-left: 4px solid var(--accent);
 }
 
 /* .kasten img — Bild im Kasten */
@@ -705,4 +700,18 @@ tr:nth-last-child(1) {
 /* sonst wird die linie nicht angezeigt */
 table {
     border-collapse: collapse;
+}
+
+li:nth-child(2){
+    font-weight: bold;
+}
+
+li:nth-last-child(2) {
+    font-style: italic;
+}
+
+
+/* kasten mit IMG bekommen einen rand */
+.kasten:has(img) {
+    border-left: 4px solid var(--accent);
 }
