@@ -1,0 +1,19 @@
+body{
+    margin: 100px;
+}
+
+th{
+    padding-bottom: 3em;
+}
+tr:nth-child(even){
+    background-color: lightgray;
+    /* border: 10px solid green; */
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr:nth-last-child(1) {
+    border-left: 10px cyan solid;
+}
