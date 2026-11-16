@@ -1,0 +1,17 @@
+.testbereich [data-topic^="css-adv"]{
+    border: 2px dotted red;
+}
+
+.testbereich [data-topic^="css-adv"] :nth-child(3) a{
+    color: green;
+    font-weight: bold;
+}
+.testbereich [data-topic^="css-adv"] :nth-child(3) a:hover{
+    color: red;
+    transition-duration: 1s;
+}
+
+table.preise tr:nth-child(3) {background-color:red;}
+table.preise tr:last-child{
+    border-top: 1px black solid;
+}

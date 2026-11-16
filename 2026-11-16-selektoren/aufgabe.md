@@ -57,14 +57,15 @@ Vier Aussagen, **0 bis 4 können richtig sein**. Kreuze alle zutreffenden an.
 
 **Aussagen zu Selektoren und Spezifität**
 
-- [ ] Ein Selektor wie `p.hinweis` trifft nur Absätze, die diese Klasse tragen.
-- [ ] `h2 ~ p` trifft alle Absätze nach einer `h2`, die dieselbe Ebene haben.
+- [x] Ein Selektor wie `p.hinweis` trifft nur Absätze, die diese Klasse tragen.
+- [x] `h2 ~ p` trifft alle Absätze nach einer `h2`, die dieselbe Ebene haben.
 - [ ] `:nth-child(2)` und `:nth-of-type(2)` treffen immer dasselbe Element.
-- [ ] Bei gleichem Gewicht gewinnt die später notierte Regel.
+
+- [x] Bei gleichem Gewicht gewinnt die später notierte Regel.
 
 **a)** Kreuze an und begründe bei der Aussage, die du **nicht** angekreuzt
 hast, warum sie falsch ist:
-
+nth of type trifft nur objekte vom gleichen typ
 _________________________________________________
 
 **b)** Schreibe für jede Zielbeschreibung **einen** Selektor. Es gibt
@@ -72,11 +73,11 @@ mehrere richtige Lösungen; eine genügt.
 
 | Ziel | Dein Selektor |
 |------|---------------|
-| alle Links, deren Ziel auf `.pdf` endet | |
-| alle Absätze außer denen mit der Klasse `hinweis` | |
-| das erste `li` in jeder `ul` | |
-| jedes Element, das ein `img` enthält | |
-| das Häkchen, das direkt vor einem `label` steht | |
+| alle Links, deren Ziel auf `.pdf` endet | | [href$=".pdf"]
+| alle Absätze außer denen mit der Klasse `hinweis` | | p:not(.hinweis)
+| das erste `li` in jeder `ul` | | li.first-child
+| jedes Element, das ein `img` enthält | | :has(img)
+| das Häkchen, das direkt vor einem `label` steht | | input[type="checkbox"]
 
 **c)** Diese Regel tut nicht, was der Kommentar behauptet. Erkläre den Fehler
 und schreibe die Regel richtig:
@@ -85,7 +86,7 @@ und schreibe die Regel richtig:
 /* Der erste Absatz im Container soll fett sein. */
 p:nth-child(1) { font-weight: bold; }
 ```
-
+das erste p element im container wird fett. Das geht nur wenn der Container nicht auch ein p element ist.
 _________________________________________________
 
 ### Musterlösung zu Beispiel 2
@@ -151,6 +152,7 @@ Rahmen bekommt — **ohne** Klassen oder IDs in den Zeilen.
 **d)** Erkläre in zwei Sätzen, warum du für (a) einen Attribut-Selektor und
 keinen Klassen-Selektor verwendet hast.
 
+Weil das a vernestet genug ist, dass das attribut nicht ausversehen etwas anderes treffen kann. Eine weitere Klasse wäre nicht nötig
 _________________________________________________
 
 ### Kurzlösung zu Beispiel 3
